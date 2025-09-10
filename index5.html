@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #13a4ec;
+        --secondary-color: #1a202c;
+        --accent-color: #2d3748;
+      }
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-[var(--secondary-color)] text-white" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--accent-color)] px-10 py-4">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-[var(--primary-color)] text-3xl">
+              waves
+            </span>
+<h1 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">OceanGuard</h1>
+</div>
+<nav class="flex items-center gap-8 text-sm font-medium">
+<a class="text-white hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-white hover:text-[var(--primary-color)] transition-colors" href="#">Map</a>
+<a class="text-white hover:text-[var(--primary-color)] transition-colors" href="#">Alerts</a>
+<a class="text-white hover:text-[var(--primary-color)] transition-colors" href="#">Community</a>
+<a class="text-white hover:text-[var(--primary-color)] transition-colors" href="#">Resources</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-[var(--accent-color)] text-white hover:bg-opacity-80 transition-colors">
+<span class="material-symbols-outlined">
+                    notifications
+                </span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfzT3uivY5oLp9d4q_HzZi1tpNLQ1hb39YEYRQdjmoSYllBXs0rnSIMqzK1zP7x5DZchFuGtxy6vQCQSVRuCbNxsdLLMn6LKJQ5VEXBFqz9iwBaM9thtRkzM-AK1b93_6xf_-yYAkYfPk688EccRu70oSLukjUAptCdf_AsYHy-kGBOx50h-ZfNLQS1zw-BYyqKzGIubcGKSq1nrRn9JdYrooeu4mPhaRvacH9dSYpoJdgBxU9aglKw_Bq0d4zvsqPiEEty-Eo8i0");'></div>
+</div>
+</header>
+<main class="px-10 lg:px-20 xl:px-40 flex flex-1 justify-center py-8">
+<div class="layout-content-container flex flex-col max-w-7xl flex-1 gap-8">
+<div class="flex flex-col gap-4">
+<h2 class="text-white text-3xl font-bold tracking-tight">Dashboard</h2>
+<p class="text-gray-400">Current tragedies &amp; real-time weather forecasts</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2">
+<div class="bg-cover bg-center flex min-h-[480px] flex-1 flex-col justify-between p-6 rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA17nzuEkJePnv2juROyAHyVMtN2CqjXshgucR2QxqIDB29oqv1fUiBqTv98zy8noFK6lwuXF53m7SuyvcvAQxHNV-znZqsLDwExGrr2MunmiAOWHcBg_RhARyJlopvwg8GplXo4LRP4fuSi9RZKq0ns3c5pCU7O3d5Gk-pIibbTMTL8oyvCw0XFFxAI5obUKlw2G4s4qGQqdIpbUOp4OL9KEsfkdlCp88iVwmNRkMU2DsdfZUr7Ys8_tirgKVdpXflRktqpXy3T78");'>
+<div class="flex items-start justify-between">
+<div class="flex w-full max-w-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                                        search
+                                    </span>
+<input class="form-input w-full min-w-0 resize-none overflow-hidden rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] border-none bg-[var(--accent-color)] bg-opacity-80 backdrop-blur-sm h-12 placeholder:text-gray-400 pl-10 pr-4 text-base font-normal leading-normal" placeholder="Search for a location" value=""/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex flex-col rounded-lg bg-[var(--accent-color)] bg-opacity-80 backdrop-blur-sm shadow-lg">
+<button class="flex size-10 items-center justify-center rounded-t-lg hover:bg-opacity-70 transition-colors">
+<span class="material-symbols-outlined text-white">add</span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-b-lg hover:bg-opacity-70 transition-colors">
+<span class="material-symbols-outlined text-white">remove</span>
+</button>
+</div>
+<button class="flex size-10 items-center justify-center rounded-lg bg-[var(--accent-color)] bg-opacity-80 backdrop-blur-sm shadow-lg hover:bg-opacity-70 transition-colors">
+<span class="material-symbols-outlined text-white">navigation</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<h3 class="text-white text-2xl font-bold tracking-tight">Key Metrics</h3>
+<div class="grid grid-cols-1 @md:grid-cols-2 lg:grid-cols-1 gap-4">
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-[var(--accent-color)]">
+<p class="text-gray-300 text-base font-medium leading-normal">Total Incidents</p>
+<p class="text-white tracking-tight text-3xl font-bold leading-tight">1,250</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-[var(--accent-color)]">
+<p class="text-gray-300 text-base font-medium leading-normal">Active Alerts</p>
+<p class="text-[var(--primary-color)] tracking-tight text-3xl font-bold leading-tight">32</p>
+</div>
+<div class="flex flex-col gap-2 rounded-lg p-6 bg-[var(--accent-color)]">
+<p class="text-gray-300 text-base font-medium leading-normal">Community Members</p>
+<p class="text-white tracking-tight text-3xl font-bold leading-tight">5,480</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-white text-2xl font-bold tracking-tight mb-4">Recent Activity</h3>
+<div class="flex flex-col divide-y divide-[var(--accent-color)]">
+<div class="flex items-center gap-4 py-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<span class="material-symbols-outlined">water</span>
+</div>
+<div class="flex-1">
+<p class="text-white text-base font-medium leading-normal">Oil Spill near Harbor</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Reported by Sarah Miller</p>
+</div>
+<p class="text-gray-500 text-sm">2 hours ago</p>
+</div>
+<div class="flex items-center gap-4 py-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<span class="material-symbols-outlined">phishing</span>
+</div>
+<div class="flex-1">
+<p class="text-white text-base font-medium leading-normal">Unusual Marine Life Behavior</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Reported by David Chen</p>
+</div>
+<p class="text-gray-500 text-sm">5 hours ago</p>
+</div>
+<div class="flex items-center gap-4 py-4">
+<div class="text-white flex items-center justify-center rounded-lg bg-[var(--accent-color)] shrink-0 size-12">
+<span class="material-symbols-outlined">landslide</span>
+</div>
+<div class="flex-1">
+<p class="text-white text-base font-medium leading-normal">Coastal Erosion Concerns</p>
+<p class="text-gray-400 text-sm font-normal leading-normal">Reported by Emily Rodriguez</p>
+</div>
+<p class="text-gray-500 text-sm">1 day ago</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #38e07b;
+      }
+    </style>
+</head>
+<body class="bg-[#111714]">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="flex h-full grow">
+<aside class="flex flex-col gap-8 w-64 p-6 bg-[#181F1B] border-r border-white/5">
+<div class="flex flex-col gap-2">
+<h1 class="text-white text-xl font-bold">OceanGuard AI</h1>
+<p class="text-gray-400 text-sm">v1.2.3</p>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-2 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-sm font-medium">Overview</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-white bg-[var(--primary-color)]/20 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">speed</span>
+<span class="text-sm font-medium">Model Performance</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">database</span>
+<span class="text-sm font-medium">Data Insights</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">account_tree</span>
+<span class="text-sm font-medium">Processing Pipeline</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-2 text-white/70 hover:text-white hover:bg-white/5 rounded-lg transition-colors" href="#">
+<span class="material-symbols-outlined">emoji_events</span>
+<span class="text-sm font-medium">Benchmarks</span>
+</a>
+</nav>
+</aside>
+<main class="flex-1 p-8 grid grid-cols-3 gap-8">
+<div class="col-span-3">
+<h2 class="text-white text-4xl font-bold tracking-tight">Model Performance</h2>
+</div>
+<div class="col-span-3 grid grid-cols-3 gap-8">
+<div class="bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<p class="text-white/70 text-sm font-medium">Accuracy</p>
+<p class="text-white text-4xl font-bold mt-2">92.5%</p>
+<p class="text-[#38e07b] text-sm font-medium mt-1">+1.2%</p>
+</div>
+<div class="bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<p class="text-white/70 text-sm font-medium">Precision</p>
+<p class="text-white text-4xl font-bold mt-2">88.2%</p>
+<p class="text-[#fa5538] text-sm font-medium mt-1">-0.5%</p>
+</div>
+<div class="bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<p class="text-white/70 text-sm font-medium">Recall</p>
+<p class="text-white text-4xl font-bold mt-2">90.1%</p>
+<p class="text-[#38e07b] text-sm font-medium mt-1">+0.8%</p>
+</div>
+</div>
+<div class="col-span-2 bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<h3 class="text-white text-lg font-bold">Image Classification Results</h3>
+<div class="mt-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-lg @xl:flex-row @xl:items-start bg-black/20">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-lg @xl:rounded-l-lg @xl:rounded-tr-none" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwNjvzaMWixAOmWcsCfJoQcs8_hqFtA_Q92de5ciiPU6S_usu0BFAEVTa7U3fixfKoiF6BcH1lP30iQ0EMTURr9AVELVeSfpsTCyHQdCeM9JJmyxXPjV_9NkaKpme7vH9g7k5WoR2sw73TzwaPxStXWLX6owjFIBspLpUD9Jnhdipkh7l8DQv_d3V1uFD9Ch1KtgU4k4LW3XP8fgRZwI1WwkSgBOu4p8VbdBlOJs90JeEDSNnQIvMdf_jnoAQIW7W0non4-iucQRU");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-2 p-4 @xl:px-6">
+<p class="text-white text-lg font-bold leading-tight">Hazard Detected: Debris Field</p>
+<p class="text-white/70 text-base font-normal">Confidence Score: <span class="text-white font-semibold">95.7%</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-1 bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<h3 class="text-white text-lg font-bold">Neural Network Visualization</h3>
+<div class="w-full h-full bg-center bg-no-repeat bg-contain mt-4 rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBMJnZC96ECFOVrT5JeRUnk3-CipG4zvCqWvFzRa-w5upc7_cavF79aXeSmFRjwJBneiSmOZ-GOiK3bwaz5ln4HjBedF4QqOqtl7nn312v2nFRLvwEOvxLJu10VQFl6BnYF5vSe4OU_CzVLdQ0Ldmz0O8hiDo0bHR7EOqXPaZHCUASkjzjrSyYzdS15o1FWpglpo8tgWsxA25d3jQpv7rbzQf0RMZGOll4EXs2z3-NuXoS91VpcuTDCE3a4O0PacYIy2zryLwvxTNU");'></div>
+</div>
+<div class="col-span-1 bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<h3 class="text-white text-lg font-bold">Model Comparison</h3>
+<div class="flex flex-col gap-4 mt-4">
+<div>
+<p class="text-white/70 text-sm font-medium">Our AI Performance</p>
+<p class="text-white tracking-tight text-3xl font-bold">91.8%</p>
+<div class="flex gap-1">
+<p class="text-white/50 text-sm font-normal">Last 30 Days</p>
+<p class="text-[#38e07b] text-sm font-medium">+2.1%</p>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-4 items-end justify-items-center h-48">
+<div class="flex flex-col items-center gap-2 w-full">
+<div class="bg-[var(--primary-color)] w-full rounded-full" style="height: 70%;"></div>
+<p class="text-white/70 text-xs font-bold tracking-wider">Our AI</p>
+</div>
+<div class="flex flex-col items-center gap-2 w-full">
+<div class="bg-white/20 w-full rounded-full" style="height: 50%;"></div>
+<p class="text-white/70 text-xs font-bold tracking-wider">Comp. A</p>
+</div>
+<div class="flex flex-col items-center gap-2 w-full">
+<div class="bg-white/20 w-full rounded-full" style="height: 40%;"></div>
+<p class="text-white/70 text-xs font-bold tracking-wider">Comp. B</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-span-2 bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<h3 class="text-white text-lg font-bold">Processing Pipeline</h3>
+<div class="w-full h-full bg-center bg-no-repeat bg-contain mt-4 rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAJiaEcWrSwNEGF5GvP8IB6tL0Qmo-iEPT_MU69tku4MrzmkUOz92VbO00-O9dMXC8kepPNsYOdSrym_sFrb73fqltVLPGoFKuH8324j9Wn9ali_yp6yI1ok4oWeP5Oj6SRQLnbuqYp08GdSB8xbIxSY-OPE_x_Pw2y7IILFMSDg2B2gZHD1qwA0yGJaxDaMh3JZ-xPrigmmFxcpSyOjEtYY-E9ZCCZ9qC0P8X4I6KL-i8O3eksVduGgjRnpALwPCo1jbCFetBcKXg");'></div>
+</div>
+<div class="col-span-3 bg-[#181F1B] rounded-xl p-6 border border-white/5">
+<h3 class="text-white text-lg font-bold">Human Expert Benchmark</h3>
+<div class="mt-4 flex flex-col gap-3">
+<div class="flex justify-between items-center">
+<p class="text-white/70 text-sm font-medium">AI Accuracy vs. Human Experts</p>
+<span class="text-white text-lg font-semibold">97.9% of Human Accuracy</span>
+</div>
+<div class="w-full bg-white/10 rounded-full h-2.5">
+<div class="bg-[var(--primary-color)] h-2.5 rounded-full" style="width: 97.9%"></div>
+</div>
+<p class="text-white/50 text-sm font-normal text-right">Human Expert Accuracy: 98% | Our AI Accuracy: 96%</p>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

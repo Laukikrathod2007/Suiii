@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OceanGuard AI - Protecting India's Coastline</title>
+  <style>
+    /* ===== Variables ===== */
+    :root {
+      --primary-dark: #001f3f;
+      --primary-blue: #0074d9;
+      --light-blue: #7fdbff;
+      --accent-orange: #ff6f00;
+      --accent-red: #ff4136;
+      --accent-green: #2ecc40;
+      --white: #fff;
+      --glass-bg: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--primary-dark), var(--primary-blue), var(--light-blue));
+      color: var(--white);
+      min-height: 100vh;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* ===== Navbar ===== */
+    header.navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: var(--glass-bg);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+
+    .logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(45deg, var(--light-blue), var(--primary-blue));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      background: var(--glass-bg);
+      transform: translateY(-2px);
+    }
+
+    .nav-actions {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
+
+    .lang-toggle,
+    .login-btn {
+      border-radius: 20px;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+    }
+
+    .lang-toggle {
+      background: var(--glass-bg);
+      color: var(--white);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .login-btn {
+      background: linear-gradient(45deg, #ff8f00, var(--accent-orange));
+      color: var(--white);
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 111, 0, 0.4);
+    }
+
+    /* Mobile nav */
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      color: var(--white);
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: var(--glass-bg);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        padding: 1rem;
+        border-radius: 15px;
+      }
+      .nav-menu.active {
+        display: flex;
+      }
+      .menu-toggle {
+        display: block;
+      }
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      padding-top: 120px;
+      padding-bottom: 80px;
+      text-align: center;
+      max-width: 1200px;
+      margin: auto;
+      padding-inline: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(45deg, #fff, var(--light-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 2rem;
+    }
+
+    .cta-container {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .cta-btn {
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .cta-emergency {
+      background: linear-gradient(45deg, var(--accent-red), #dc143c);
+      color: var(--white);
+    }
+    .cta-dashboard {
+      background: linear-gradient(45deg, var(--primary-blue), var(--primary-dark));
+      color: var(--white);
+    }
+    .cta-authority {
+      background: linear-gradient(45deg, #ffd700, #ffa500);
+      color: var(--primary-dark);
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 5rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon">🌊</div>
+        <span>OceanGuard AI</span>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+        <li><a href="#analytics" class="nav-link">Analytics</a></li>
+        <li><a href="#alerts" class="nav-link">Alerts</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <select class="lang-toggle" aria-label="Choose language">
+          <option>🇮🇳 English</option>
+          <option>🇮🇳 हिन्दी</option>
+          <option>🇮🇳 தமிழ்</option>
+        </select>
+        <button class="login-btn">👨‍💼 Authority Login</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="home" class="hero">
+      <h1>Protecting India's 7,517km Coastline with Superhuman AI</h1>
+      <p class="hero-subtitle">
+        Real-time hazard detection • Government endorsed • 96% AI accuracy • 30s response
+      </p>
+      <div class="cta-container">
+        <a href="#emergency" class="cta-btn cta-emergency">🚨 Report Emergency</a>
+        <a href="#dashboard" class="cta-btn cta-dashboard">📊 View Live Dashboard</a>
+        <a href="#authority" class="cta-btn cta-authority">🛡️ Authority Access</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 OceanGuard AI · Protecting India's Coastline · Made with 🌊 + 🤖
+  </footer>
+
+  <script>
+    // Mobile nav toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

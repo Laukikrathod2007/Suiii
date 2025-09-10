@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Space+Grotesk:wght@400;500;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --primary-color: #1193d4;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-[#0D1117]">
+<div class="relative flex size-full min-h-screen flex-col text-white">
+<div class="flex-1">
+<div class="flex h-full">
+<aside class="w-96 shrink-0 border-r border-slate-800 bg-[#161B22] p-6 flex flex-col">
+<div class="mb-8">
+<h1 class="text-2xl font-bold">Live Satellite Tracking</h1>
+<p class="text-slate-400 mt-2">Real-time satellite positions and coverage, secured by blockchain.</p>
+</div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[var(--primary-color)]">
+                            hub
+                        </span>
+<h2 class="text-xl font-medium">Blockchain Metrics</h2>
+</div>
+<div class="space-y-4 overflow-y-auto">
+<div class="bg-slate-800/50 rounded-lg p-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Transaction Hash</span>
+<span class="font-mono text-slate-300">0xabc123...</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Timestamp</span>
+<span>2023-11-15 14:30 UTC</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Contributing Node</span>
+<span>Node 789</span>
+</div>
+</div>
+<div class="bg-slate-800/50 rounded-lg p-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Transaction Hash</span>
+<span class="font-mono text-slate-300">0xdef456...</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Timestamp</span>
+<span>2023-11-15 14:35 UTC</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Contributing Node</span>
+<span>Node 456</span>
+</div>
+</div>
+<div class="bg-slate-800/50 rounded-lg p-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Transaction Hash</span>
+<span class="font-mono text-slate-300">0x123abc...</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Timestamp</span>
+<span>2023-11-15 14:40 UTC</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Contributing Node</span>
+<span>Node 123</span>
+</div>
+</div>
+<div class="bg-slate-800/50 rounded-lg p-4 space-y-3">
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Transaction Hash</span>
+<span class="font-mono text-slate-300">0xghi789...</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Timestamp</span>
+<span>2023-11-15 14:45 UTC</span>
+</div>
+<div class="flex justify-between items-center text-sm">
+<span class="text-slate-400">Contributing Node</span>
+<span>Node 007</span>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1">
+<div class="h-full relative">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiKDzStDv0tHWn-kYNq0AXpi8hoiavHSN5-betXNhFweZf96Uc1j4UFdsc8m-JuO07IkUg8C9EmWxIyr2fWHo_CMmTvOf9MH9DGIIzyUFLDnn7uQ4RZk-UF0uz9r8YErGTuiQQJmFNd_xbHDjlug5QAendJHSeMoW2OBEM-V95IHvqvnwQGe8gl_xtmxsdIuCtdSRToGEa9hXXEygK_KfCoCH2ct8RdPWbvTtj3yZWVfyHui2SAr9unJva1MGTFWSbj1f_cw70Jvo");'>
+</div>
+<div class="absolute top-6 left-6 w-80">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="w-full bg-slate-900/80 border border-slate-700 rounded-lg pl-10 pr-4 py-2.5 focus:ring-2 focus:ring-[var(--primary-color)] focus:outline-none placeholder-slate-500" placeholder="Search location..." type="text"/>
+</div>
+</div>
+<div class="absolute bottom-6 right-6 flex flex-col gap-3">
+<div class="flex flex-col rounded-lg bg-slate-900/80 border border-slate-700">
+<button class="p-2.5 hover:bg-slate-800/50 rounded-t-lg">
+<span class="material-symbols-outlined">add</span>
+</button>
+<hr class="border-slate-700"/>
+<button class="p-2.5 hover:bg-slate-800/50 rounded-b-lg">
+<span class="material-symbols-outlined">remove</span>
+</button>
+</div>
+<button class="p-2.5 bg-slate-900/80 border border-slate-700 rounded-lg hover:bg-slate-800/50">
+<span class="material-symbols-outlined">navigation</span>
+</button>
+</div>
+<div class="absolute bottom-6 left-6 bg-slate-900/80 border border-slate-700 rounded-lg px-4 py-2">
+<p class="text-sm text-slate-300">Data secured and verified by blockchain technology.</p>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
+
+</body></html>
